@@ -1,6 +1,8 @@
 import * as React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from '../components/Navigation';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "../components/Navigation";
+import { Footer } from "../components/Navigation"
+import Card from "../components/ProjectCards";
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -17,18 +19,6 @@ const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 600
-}
-const footerStyles = {
-  position: "fixed",
-  backgroundColor: "black",
-  left: 0,
-  bottom: 0,
-  width: "100%",
-  padding: "30px",
-  color: "white",
-  textAlign: "center",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  fontSize: "12px"
 }
 
 // markup
@@ -47,16 +37,9 @@ const IndexPage = () => {
             A UX designer and front-end developer based in Seattle.
           </h2>
         </div>
-        <p>
-          This is a <code>code block</code>.{" "}
-          <span role="img" aria-label="Sunglasses smiley emoji">
-            😎
-          </span>
-        </p>
+        <Card />
       </div>
-      <footer style={footerStyles}>
-        <div>© 2021 Built by Kenny Nguyen</div>
-      </footer>
+      <Footer />
     </main>
   )
 }
