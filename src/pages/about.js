@@ -1,16 +1,17 @@
 import React from "react";
-import Navbar from "../components/Navigation";
+import Layout from "../components/Layout";
 
 const AboutPage = () => {
     return (
         <div>
-            <Navbar />
+            <Layout>
             <p>
                 This is a <code>code block</code>.{" "}
                 <span role="img" aria-label="Sunglasses smiley emoji">
                 😎
                 </span>
             </p>
+            </Layout>
         </div>
     )
 }

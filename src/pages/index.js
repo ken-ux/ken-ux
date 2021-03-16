@@ -1,7 +1,6 @@
 import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "../components/Navigation";
-import { Footer } from "../components/Navigation"
+import Layout from "../components/layout";
 import Card from "../components/ProjectCards";
 <link
   rel="stylesheet"
@@ -26,20 +25,20 @@ const IndexPage = () => {
   return (
     <main>
       <title>Kenny Nguyen | Projects</title>
-      <Navbar />
-      <div style={pageStyles}>
-        <div style={headingStyles}>
-          <h1>
-            Hello! I'm Kenny.
-            <br />
-          </h1>
-          <h2>
-            A UX designer and front-end developer based in Seattle.
-          </h2>
+      <Layout>
+        <div style={pageStyles}>
+          <div style={headingStyles}>
+            <h1>
+              Hello! I'm Kenny.
+              <br />
+            </h1>
+            <h2>
+              A UX designer and front-end developer based in Seattle.
+            </h2>
+          </div>
+          <Card />
         </div>
-        <Card />
-      </div>
-      <Footer />
+      </Layout>
     </main>
   )
 }
