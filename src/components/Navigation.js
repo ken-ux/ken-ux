@@ -22,3 +22,24 @@ export default function Navigation(props) {
     </Navbar>
   )
 }
+
+export function Footer(props) {
+  const footerStyles = {
+    position: "absolute",
+    backgroundColor: "black",
+    left: 0,
+    bottom: 0,
+    width: "100%",
+    padding: "30px",
+    color: "white",
+    textAlign: "center",
+    fontFamily: "-apple-system, Roboto, sans-serif, serif",
+    fontSize: "12px",
+  }
+  
+  return (
+    <footer style={footerStyles}>
+      <div>© 2021 Built by Kenny Nguyen</div>
+    </footer>
+  )
+}
