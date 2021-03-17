@@ -16,6 +16,7 @@
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
+    "@lottiefiles/lottie-player": "^0.5.1",
     "bootstrap": "^4.6.0",
     "gatsby": "^3.0.1",
     "react": "^17.0.1",
