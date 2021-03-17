@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from 'react-bootstrap';
 import Layout from "../components/Layout";
 import Card from "../components/ProjectCards";
-import "@lottiefiles/lottie-player";
+import animationData from "../animations/lottieanim.json";
+import Lottie from 'react-lottie-player';
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -24,14 +25,11 @@ const IndexPage = () => {
         <div className="px-5" style={pageStyles}>
           <Row className="align-items-center">
             <Col>
-              <lottie-player
-                src="https://assets7.lottiefiles.com/packages/lf20_micjhd5b.json"
-                background="transparent"
-                speed="1"
+              <Lottie
                 loop
-                autoplay
-              >
-              </lottie-player>
+                animationData={animationData}
+                play
+              />
             </Col>
             <Col>
               <h1>
