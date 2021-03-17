@@ -1,7 +1,7 @@
 import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from 'react-bootstrap';
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Card from "../components/ProjectCards";
 import "@lottiefiles/lottie-player";
 <link
@@ -59,10 +59,17 @@ const IndexPage = () => {
               </h3>
             </Col>
           </Row>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Row> {/* Use function to repeat cards instead of pasting manually */}
+            <Col>
+              <Card />
+            </Col>
+            <Col>
+              <Card />
+            </Col>
+            <Col>
+              <Card />
+            </Col>
+          </Row>
         </div>
     </Layout>
   )
