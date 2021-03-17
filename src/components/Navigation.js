@@ -25,7 +25,7 @@ export default function Navigation(props) {
 
 export function Footer(props) {
   const footerStyles = {
-    position: "absolute",
+    position: "relative",
     backgroundColor: "black",
     left: 0,
     bottom: 0,
