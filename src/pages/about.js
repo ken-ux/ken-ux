@@ -3,16 +3,14 @@ import Layout from "../components/Layout";
 
 const AboutPage = () => {
     return (
-        <div>
-            <Layout>
+        <Layout>
             <p>
                 This is a <code>code block</code>.{" "}
                 <span role="img" aria-label="Sunglasses smiley emoji">
                 😎
                 </span>
             </p>
-            </Layout>
-        </div>
+        </Layout>
     )
 }
 
