@@ -1,0 +1,2 @@
+(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[682],{5518:function(e,l,n){"use strict";n.r(l);var t=n(7294),a=n(3173);l.default=function(){return t.createElement("div",null,t.createElement(a.Z,null,t.createElement("p",null,"This is a ",t.createElement("code",null,"code block"),"."," ",t.createElement("span",{role:"img","aria-label":"Sunglasses smiley emoji"},"😎"))))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-8343464645eaa8ac1876.js.map
