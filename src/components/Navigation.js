@@ -34,7 +34,7 @@ export function Footer(props) {
     color: "white",
     textAlign: "center",
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
-    fontSize: "12px",
+    fontSize: "12px"
   }
   
   return (
