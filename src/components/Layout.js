@@ -3,10 +3,14 @@ import Navbar from "./Navigation";
 import { Footer } from "./Navigation";
 
 export default function Layout({ children }) {
+  const pageStyles = {
+    backgroundColor: "#f8e3d5",
+    fontFamily: "-apple-system, Roboto, sans-serif, serif"
+  }
   return (
     <div>
         <Navbar />
-          <div className="page px-5">
+          <div className="px-5" style={pageStyles}>
             {children}
           </div>
         <Footer />
