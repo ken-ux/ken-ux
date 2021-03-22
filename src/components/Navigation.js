@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function Navigation(props) {
   return (
     <Navbar expand="lg">
-        <Navbar.Brand href="/">Kenny Nguyen</Navbar.Brand>
+        <Navbar.Brand href="/">KN</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
