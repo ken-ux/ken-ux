@@ -4,7 +4,7 @@ import { Footer } from "./Navigation";
 
 export default function Layout({ children }) {
   const pageStyles = {
-    backgroundColor: "#f8e3d5",
+    backgroundColor: "white", //#f8e3d5
     fontFamily: "-apple-system, Roboto, sans-serif, serif"
   }
   return (
