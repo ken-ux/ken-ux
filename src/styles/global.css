@@ -1,6 +1,11 @@
 .my-projects {
     text-align: right;
 }
+@media only screen and (max-width: 600px) {
+    .my-projects {
+      text-align: left;
+    }
+  }
 html {
     scroll-behavior: smooth;
 }
