@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 export default function ProjectCards(props) {
     return (
-        <Card border={props.border} className="my-4 mx-5">
+        <Card border="secondary" className="my-4 mx-5">
             <Card.Body style={{height: "200px"}}>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>
