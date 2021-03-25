@@ -11,12 +11,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const AboutPage = () => {
     return (
         <Layout>
-            <p>
-                This is a <code>code block</code>.{" "}
-                <span role="img" aria-label="Sunglasses smiley emoji">
-                😎
-                </span>
-            </p>
+            <h1>About</h1>
+            <br />
+            <div>
+                <h2>Hi there!</h2>
+                <p>
+                These are some words to describe who I am.
+                </p>
+            </div>
+            <br />
+            <div>
+                <h2>My Design Journey</h2>
+                <p>This is another section with an abridged section. Abridged</p>
+                <p>Expanded:
+                    As an undergraduate initially majoring in Public Health, one of the most fascinating stories
+                    to learn about was the role of the <strong>iron fish</strong>. Fast-forward to a graduation speech.
+                </p>
+            </div>
         </Layout>
     )
 }
