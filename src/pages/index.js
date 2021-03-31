@@ -3,16 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 import { Row, Col } from 'react-bootstrap';
 import Layout from "../components/Layout";
-import Card from "../components/ProjectCards";
+// import Card from "../components/ProjectCards";
 import animationData from "../animations/lottieanim.json";
 import Lottie from 'react-lottie-player';
 import { Link } from "gatsby";
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-  crossorigin="anonymous"
-/>;
+import placeholder from '../images/placeholder.png'
 
 // styles
 const heroStyles = { // To make hero text full length of page
@@ -24,32 +19,30 @@ const IndexPage = () => {
   return (
     <Layout>
       <title>Kenny Nguyen | Portfolio</title>
-        <div>
-          <Row className="align-items-center" style={heroStyles}>
-            <Col>
-              <Lottie
-                loop
-                animationData={animationData}
-                play
-              />
-            </Col>
-            <Col style={{ paddingRight: "50px" }}>
+        <Row className="align-items-center" style={heroStyles}>
+          <Col xs={12} md={6}>
+            <Lottie
+              loop
+              animationData={animationData}
+              play
+            />
+          </Col>
+          <Col xs={12} md={6} className="hero-text">
               <h1>
                 Kenny Nguyen
-                <br />
               </h1>
               <h2>
                 UX Designer | Software Engineer
-                <br />
               </h2>
               <br />
               <h4>
+                <span role="img" aria-label="planet emoticon">🌏 </span>
                 A curious thinker with an <span style={{ color: "#FF5349" }}>equity-focused</span> lens for the
                 <span style={{ color: "green" }}> designs</span> shaping global communities.
                 <br />
                 <br />
-                I'm a <span style={{ color: "#00A4EF" }}>scientist-turned-designer</span> drawn to 
-                addressing social issues through interaction design. <a href="/about"><em>Here's my story.</em></a>
+                I'm a <span style={{ color: "#00A4EF" }}>systems-oriented</span> designer drawn to 
+                social issues addressed through interaction design. <a href="/about"><em>Here's my story.</em></a>
                 <br />
                 <br />
                 View my portfolio down below.{" "}
@@ -62,22 +55,23 @@ const IndexPage = () => {
                   </svg>
                 </Link>
               </h4>
-            </Col>
+          </Col>
+        </Row>
+        <Row> {/* Use function to repeat cards instead of pasting manually */}
+          <h2 className="my-projects" id="projects">Projects</h2>
+          <Row>
+            <img src={placeholder} alt="placeholder"/>
+            <img src={placeholder} alt="placeholder"/>
+            <img src={placeholder} alt="placeholder"/>
+            <img src={placeholder} alt="placeholder"/>
+              {/* <Card 
+                title="Visualizing Diversity in Higher Education"
+                subtitle="Data Visualization, Qualitative User Testing"/>
+              <Card title="COVID Visualization Redesign"/>
+              <Card title="Pura"/>
+              <Card title="Case Study"/> */}
           </Row>
-          <Row> {/* Use function to repeat cards instead of pasting manually */}
-            <Col className="my-projects my-3" id="projects">
-              <h2>Projects</h2>
-            </Col>
-            <Col xs={9}>
-                <Card
-                  title="Visualizing Diversity in Higher Education"
-                  subtitle="Data Visualization, Qualitative User Testing"/>
-                <Card title="COVID Visualization Redesign"/>
-                <Card title="Pura"/>
-                <Card title="Case Study"/>
-            </Col>
-          </Row>
-        </div>
+        </Row>
     </Layout>
   )
 }
