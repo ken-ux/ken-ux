@@ -10,17 +10,13 @@ const AboutPage = () => {
             <div>
                 <h2>Hi there!</h2>
                 <p>
-                These are some words to describe who I am.
+                These are some words to describe who I am. Placeholder text.
                 </p>
             </div>
             <br />
             <div>
                 <h2>My Design Journey</h2>
-                <p>This is another section with an abridged section. Abridged</p>
-                <p>Expanded:
-                    As an undergraduate initially majoring in Public Health, one of the most fascinating stories
-                    to learn about was the role of the <strong>iron fish</strong>. Fast-forward to a graduation speech.
-                </p>
+                <p>Placeholder text.</p>
             </div>
         </Layout>
     )
