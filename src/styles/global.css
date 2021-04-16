@@ -1,3 +1,6 @@
+h4 {
+    font-family: 'Open Sans'
+}
 html {
     scroll-behavior: smooth;
 }
@@ -11,21 +14,21 @@ h4 a:hover {
 }
 .navigation {
     transition: 0.3s;
-    background-color: #f8e3d5;
+    background-color: white;
 }
 .navigation:hover {
-    background-color: white;
+    background-color: #f8e3d5;
 }
 .my-projects {
     margin-top: 20px;
     padding-left: 60px;
 }
-/* .hero-text {
-    padding: 30px;
-    background-color: #f8e3d5;
-    border-radius: 10px;
-} */
-img {
+.profile {
+    margin-left: 25%;
+    width: 60%;
+    border-radius: 50%;
+}
+.projects img {
     padding: 50px;
     width: 50%;
 }
@@ -41,13 +44,10 @@ img {
     .navigation {
         background-color: #f8e3d5;
     }
-    .navigation:hover {
-        background-color: #f8e3d5;
-    }
     .hero-text {
         padding: auto;
     }
-    img {
+    .projects img {
         width: 100%;
         padding: 15px;
     }
