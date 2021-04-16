@@ -3,15 +3,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 import { Row, Col } from 'react-bootstrap';
 import Layout from "../components/Layout";
-// import Card from "../components/ProjectCards";
-import animationData from "../animations/lottieanim.json";
-import Lottie from 'react-lottie-player';
+// import animationData from "../animations/lottieanim.json";
+// import Lottie from 'react-lottie-player';
 import { Link } from "gatsby";
+import profile from '../images/profile.jpeg'
 import placeholder from '../images/placeholder.png'
 
 // styles
 const heroStyles = { // To make hero text full length of page
-  height: "92vh"
+  height: "79vh"
 }
 
 // markup
@@ -21,13 +21,14 @@ const IndexPage = () => {
       <title>Kenny Nguyen | Portfolio</title>
         <Row className="align-items-center" style={heroStyles}>
           <Col xs={12} md={6}>
-            <Lottie
+            {/* <Lottie
               loop
               animationData={animationData}
               play
-            />
+            /> */}
+            <img className="profile" src={profile} alt="profile image" />
           </Col>
-          <Col xs={12} md={6} className="hero-text">
+          <Col xs={12} md={6}>
               <h1>
                 Kenny Nguyen
               </h1>
@@ -37,12 +38,12 @@ const IndexPage = () => {
               <br />
               <h4>
                 <span role="img" aria-label="planet emoticon">🌏 </span>
-                A curious thinker with an <span style={{ color: "#FF5349" }}>equity-focused</span> lens for the
-                <span style={{ color: "green" }}> designs</span> shaping global communities.
+                A curious thinker with an <strong>equity-focused</strong> lens for the
+                <span style={{ color: "green" }}> designs</span> shaping our communities.
                 <br />
                 <br />
-                I'm a <span style={{ color: "#00A4EF" }}>systems-oriented</span> designer drawn to 
-                social issues addressed through interaction design. <a href="/about"><em>Here's my story.</em></a>
+                I enjoy designing <span style={{ color: "#00A4EF" }}>experiences</span> and building
+                applications that are meaningful, empowering, and fun. <a href="/about"><em>Here's my story.</em></a>
                 <br />
                 <br />
                 View my portfolio down below.{" "}
@@ -57,7 +58,7 @@ const IndexPage = () => {
               </h4>
           </Col>
         </Row>
-        <Row> {/* Use function to repeat cards instead of pasting manually */}
+        <Row className="projects"> {/* Use function to repeat cards instead of pasting manually */}
           <h2 className="my-projects" id="projects">Projects</h2>
           <Row>
             <img src={placeholder} alt="placeholder"/>
