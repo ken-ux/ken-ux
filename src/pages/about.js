@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const AboutPage = () => {
     return (
@@ -10,7 +9,7 @@ const AboutPage = () => {
             <div>
                 <h2>Hi there!</h2>
                 <p>
-                These are some words to describe who I am. Placeholder text.
+                These are some words to describe who I am.
                 </p>
             </div>
             <br />

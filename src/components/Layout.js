@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navigation";
-import { Footer } from "./Navigation";
 
 export default function Layout({ children }) {
   const pageStyles = {
@@ -9,11 +7,11 @@ export default function Layout({ children }) {
   }
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
           <div className="px-5" style={pageStyles}>
             {children}
           </div>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
