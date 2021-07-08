@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     background: 'none',
     borderRadius: 3,
     border: 0,
-    padding: "30px 0px",
+    padding: "40px 50px",
     color: '#8F8F8F',
   },
   title: {
@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   pageStyle: {
-    backgroundColor: "white"
+    backgroundColor: "white",
+    padding: "0px 74px"
   },
 }));
 
@@ -35,33 +36,44 @@ export default function Layout({ children }) {
   
   return (
     <div>
+      {/* Navbar */}
       <AppBar elevation={0} position="static" className={classes.appBarStyle}>
         <Toolbar variant="dense">
-          <Typography variant="h6" className={classes.title}>
-            Kenny Nguyen
+          <Typography variant="h6" component="h1" className={classes.title}>
+            <Link href="/" color="inherit" underline="none">
+              Kenny Nguyen
+            </Link>
           </Typography>
-          <Typography className={classes.links}>
-            <Link href="/" color="inherit">
+          <Typography variant="subtitle1" component="h2" className={classes.links}>
+            <Link href="/" color="inherit" underline="none">
               Home
             </Link>
-            <Link href="/about" color="inherit">
+            <Link href="/about" color="inherit" underline="none">
               About
             </Link>
-            <Link href="#projects" color="inherit">
+            <Link href="#projects" color="inherit" underline="none">
               Projects
             </Link>
           </Typography>
-          <IconButton aria-label="github" color="inherit">
-            <GitHubIcon/>
-          </IconButton>
-          <IconButton aria-label="linkedin" color="inherit">
-            <LinkedInIcon/>
-          </IconButton>
+          <Link href="https://github.com/ken-ux">
+            <IconButton aria-label="github">
+              <GitHubIcon />
+            </IconButton>
+          </Link>
+          <Link href="https://www.linkedin.com/in/kennyhn/">
+            <IconButton aria-label="linkedin">
+              <LinkedInIcon />
+            </IconButton>
+          </Link>
         </Toolbar>
       </AppBar>
+
+      {/* Body */}
       <div className={classes.pageStyle}>
         {children}
       </div>
+
+      {/* Footer */}
       <Typography variant="body1" style={{ textAlign:"center" }}>Made with care by Kenny Nguyen 🌱</Typography>
     </div>
   )
