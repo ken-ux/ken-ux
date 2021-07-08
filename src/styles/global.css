@@ -1,27 +1,14 @@
 html {
     scroll-behavior: smooth;
 }
-h4 a {
-    color: orange;
+h2 a {
     transition: 0.4s;
 }
-h4 a:hover {
-    color: black;
-    text-decoration: none;
-}
-.navigation {
-    transition: 0.3s;
-    background-color: white;
-}
-.navigation:hover {
-    background-color: #f8e3d5;
+h2 a:hover {
+    color: #A4D0B6;
 }
 .profile {
-    margin-left: 25%;
-    width: 60%;
+    margin-left: 15%;
+    width: 80%;
     border-radius: 50%;
-}
-.projects img {
-    padding: 50px;
-    width: 50%;
 }
