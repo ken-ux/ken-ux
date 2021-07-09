@@ -74,7 +74,7 @@ export default function Layout({ children }) {
       </div>
 
       {/* Footer */}
-      <Typography variant="body1" style={{ textAlign:"center" }}>Made with care by Kenny Nguyen 🌱</Typography>
+      <Typography variant="body1" style={{ textAlign:"center", padding:"45px" }}>Made with care by Kenny Nguyen 🌱</Typography>
     </div>
   )
 }
