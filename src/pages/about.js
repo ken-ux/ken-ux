@@ -1,22 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Typography from '@material-ui/core/Typography';
 
 const AboutPage = () => {
     return (
         <Layout>
-            <h1>About</h1>
-            <br />
-            <div>
-                <h2>Hi there!</h2>
-                <p>
-                These are some words to describe who I am.
-                </p>
-            </div>
-            <br />
-            <div>
-                <h2>My Design Journey</h2>
-                <p>Placeholder text.</p>
-            </div>
+            <Typography variant="h3" component="h1">
+                About
+            </Typography>
         </Layout>
     )
 }
