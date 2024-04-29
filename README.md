@@ -7,7 +7,7 @@ I'm a software developer applying what I know about creating a good user experie
 - 😄 My pronouns are `he/him`.
 - 💬 My hobbies include `3D modeling and playing RPGs`.
 
-Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/kennyhn/)! ⋆˚✿˖°
+You can check out my portfolio [here](https://kennynguyen.io). Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/kennyhn/) also! ⋆˚✿˖°
 
 ### Tools
 
