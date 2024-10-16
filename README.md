@@ -1,6 +1,6 @@
 ### Hi, I'm Kenny! 👋(•ᴗ•)
 
-I'm a software developer applying what I know about creating a good user experience to build apps that others can enjoy. Most recently a UX designer in the gaming industry.
+I'm a software developer applying what I know about creating a good user experience to build apps that others can enjoy.
 
 - 🔭 I’m currently working on `personal projects`.
 - 🌱 I’m currently learning `Go`.
