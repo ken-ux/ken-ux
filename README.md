@@ -3,7 +3,7 @@
 I'm a software developer applying what I know about creating a good user experience to build apps that others can enjoy.
 
 - 🔭 I’m currently working on `personal projects`.
-- 🌱 I’m currently learning `Go`.
+- 🌱 I’m currently learning `Web GIS`.
 - 😄 My pronouns are `he/him`.
 - 💬 My hobbies include `3D modeling and playing RPGs`.
 
